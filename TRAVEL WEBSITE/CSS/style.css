@@ -1,0 +1,730 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Montserrat", sans-serif;
+    line-height: 1.7;
+}
+
+/* ################################### HTML ELEMENT STYLING ################################## */
+
+
+html{
+    font-size: 62.5%;
+}
+
+.header{
+    position: relative;
+    height: 95vh;
+    background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url(../IMAGE/header-image.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: darken;
+   
+}
+
+ul li{
+    list-style: none;
+}
+
+a{
+    font-size: 1.3rem;
+    text-decoration: none;
+    padding-bottom: 0.1rem;
+}
+
+
+p, li{
+    font-size: 1.6rem;
+    margin-bottom: 0.5em;
+    letter-spacing: 0.10em;
+
+
+}
+
+h1,h2,h3{
+    margin-bottom: 0.5em;
+    letter-spacing: 0.10em;
+    font-weight: 500;
+}
+
+.c1 a:link{
+    color: aliceblue;
+} 
+.c1 a:visited{
+    color: white;
+} 
+.c1 a:hover{
+    border-bottom: 1px solid whitesmoke;
+}
+
+
+
+/* ################################# UTILITY CLASSES  ######################################### */
+
+.container{
+    position: relative;
+    max-width: 1000px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+
+/* ################################  HEADER STYLING  ############################################# */
+
+
+.c1{
+    background-color: rgb(27, 22, 32);
+
+}
+
+
+ .c1 .logo{
+    float: left;
+    color: white ;
+    font-size: 3rem;
+    font-weight: 500;
+}
+
+
+ .c1 .nav-items {
+    
+    float: right;
+    color: white ;
+    margin-top: 1rem;
+    
+}
+
+ .c1 .nav-item{
+    display: inline-block;
+    padding: 1rem;
+    
+
+}
+
+.c1::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/* ############################# HEADER CONTENT STYLING  #####################################   */
+
+.c2{
+    position: absolute;
+    font-size: 1rem;
+    text-align: center;
+    color: white ;
+    top: 50% ;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: linear-gradient(rgba(0,0,0,.1), rgba(0,0,0,.1));
+}
+.c3{
+    display: inline-block;
+    padding: 0.7em 1.5em;
+    font-weight: 600;
+    border-radius: 100px;
+    width: fit-content;
+    text-align: center;
+    color: rgb(250, 100, 40) ;
+    background-color: white;
+}
+
+.c2 .l1, 
+.c2 .l2{
+    font-weight: 700;
+}
+
+/* ################################ SHOWCASE STYLING  ########################################## */
+
+.showcase{
+    background: #aaa1a1;
+    padding: 10rem 0;
+    /* border: 3px solid green; */
+}
+
+.s1{
+    height: 350px;
+    border-radius: 0.5rem;
+    background: rgb(155, 216, 185);
+    margin-bottom: 10rem;
+    box-shadow:0px 0px 20px 0px #d2cfcfb2;
+    
+}
+
+.s2{
+    height: 350px;
+    border-radius: 0.5rem;
+    background: rgb(155, 216, 185);
+    box-shadow:0px 0px 20px 0px #d2cfcfb2;
+}
+
+.s1 .s1i,
+.s2 .s2t{
+    float: left;
+    width: 50%;
+}
+
+.s1 .s1t,
+.s2 .s2i{
+    float: right;
+    width: 50%;
+}
+
+.s1 .s1i,
+.s2 .s2i{
+    height: 100%;
+}
+
+.s1 .s1i img{
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.s2 .s2i img{
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.s1t, .s2t{
+    padding: 2.5rem;
+}
+
+.s1 .s1t h1{
+    font-size: 2rem;
+    color: #333;
+    font-weight: 700;
+}
+.s2 .s2t h1{
+    font-size: 2rem;
+    color: #333;
+    font-weight: 700;
+}
+
+.s1 .s1t p,
+.s2 .s2t p{
+    font-size: 1.5rem;
+    color: #473e3e;
+    font-style: italic;
+    font-weight: 500;
+    /* display: block; */
+}
+
+/* .s1t::after{
+    content: " ";
+    display: block;
+    clear: both;
+}  */
+
+.c2 a:hover,
+.s1 a:hover, 
+.s2 a:hover{
+    color: rgb(250, 100, 40);
+    background: #ddd;
+    /* border-bottom: 0.5px solid red; */
+    /* padding-bottom: 0.2rem; */
+}
+
+.s1 a,
+.s2 a{
+    border: 1px solid rgb(250, 100, 40);
+    font-size: 1.6rem;
+    font-weight: 400;
+    padding: 1rem 2rem;
+   
+
+}
+
+.showcase::after{
+    content: " ";
+    display: block;
+    clear: both;
+}
+
+/* ######################3####  FEATURE SECTION STYLING  #################################### */
+.feature{
+    background: #d4d3d3;
+    /* border: 3px solid green; */
+    padding: 10rem 0;
+    /* height: 400px; */
+    
+}
+.f-main-box::after{
+    content: " ";
+    display: block;
+    clear: both;
+}
+
+ .f-box{
+    width: 33.333333%;
+    float: left;
+    text-align: center;
+    text-transform: capitalize;
+    color: #ddd;
+    padding: 2rem;
+    box-shadow: 0px 0px 10px 0px #585252e2;
+}
+.adv, .exp{
+    background: rgba(22, 21, 69, 0.959);
+}
+.lp{
+    background: rgb(250, 100, 40);
+}
+.fd{
+    font-size: 1.6rem;
+    font-weight: 600;
+    text-align: center;
+}
+.fdp{
+    text-align: center;
+}
+
+.icon{
+    color: red;
+}
+/* ################################# FOOTER SECTION STYLING  ######################################### */
+
+.footer{
+    /* border: 4px solid rgb(7, 184, 7); */
+    background-color: rgba(23, 21, 65, 0.959);
+    padding: 2rem 0rem;
+    color: #d4d3d3;
+    text-align: center;
+}
+.f-icon i{
+    margin: 2rem;
+}
+
+/* ################################ ABOUT PAGE STYLING  ################################################## */
+
+.a-page{
+    /* border: 6px solid red; */
+    /* padding: 5rem; */
+    margin: 3rem auto;
+}
+.a-content{
+    /* border: 2px solid green; */
+    padding: 2rem;
+    background-color: #eeeaea;
+}
+.a-foot{
+    /* border: 2px solid rgb(22, 16, 139); */
+    padding: 1.5rem;
+    background-color: rgb(250, 100, 40);
+    color: #ddd;
+    box-shadow: 0px 0px 10px 0px #675656;
+}
+
+.a-page .a-content h1{
+    font-weight: 500;
+    font-size: 3rem;
+    border-bottom: 4px solid rgb(250, 100, 40);
+}
+
+.a-lorem-box{
+    /* border: 2px solid black; */
+    text-align: center;
+    margin-top: 2rem ;
+    margin-bottom: 2rem;
+}
+
+.a-lorem-box::after{
+    content: " ";
+    display: block;
+    clear: both;
+}
+
+.lorem1{
+    float: left;
+    width: 50%;
+    /* margin-left: 10rem; */
+}
+
+.lorem2{
+    float: right;
+    width: 50%;
+    /* margin-right: 10rem; */
+}
+.a-lorem-box li::before{
+    /* border: 2px solid black; */
+    content: "\2713";
+    color: rgb(250, 100, 40);
+    font-weight: bold;
+    padding-right: 1rem;
+
+}
+
+.a-content::after{
+    content: " ";
+    display: block;
+    clear: both;
+}
+
+.a-foot h2{
+    letter-spacing: 0.3rem;
+    font-weight: bold;
+    float: left;
+    font-size: 1.6rem;
+}
+.a-foot a{
+    border: 3px solid #ddd;
+    padding: 0.25rem 0.5rem;
+    word-spacing: 0.6rem;
+    letter-spacing: 0.15rem;
+    font-weight: 700;
+    color: #ddd;
+    font-size: 1.75rem;
+    float: right;
+}
+.a-foot a:hover{
+    background-color: #97ba3d;
+}
+
+
+.a-foot::after{
+    content: " ";
+    display: block;
+    clear: both;
+}
+
+/* .a-stats{
+    border: 2px solid green;
+} */
+
+.a-stats .t, .p, .g, .s{
+    /* border: 2px solid lightcoral; */
+    width: 25%;
+    float: left;
+    text-align: center;
+    font-size: 1.3rem;
+    
+}
+
+.a-stats h2{
+    font-weight: 800;
+    color: rgb(250, 100, 40);
+    margin-bottom: 0.1em;
+    margin-top: 0.5em;
+}
+.a-stats h3{
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: rgba(14, 10, 8, 0.801);
+}
+
+.a-stats::after{
+    content: " ";
+    display: block;
+    clear: both;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* ##################################### CONTACT PAGE STYLING  ################################################### */
+
+.cp{
+    /* border: 2px solid red; */
+    padding: 2rem ;
+    background-color: rgb(147, 209, 151);
+}
+.cpc{
+    /* border: 2px solid rgb(66, 122, 178); */
+    padding: 2rem;
+    /* background-color: bisque; */
+}
+.cpc::after{
+    content: " ";
+    display: block;
+    clear: both;
+
+}
+
+.info-box{
+    /* border: 2px solid green; */
+    float: left;
+    height: 100%;
+    width: 49%;
+    /* margin: 5rem; */
+    padding: 0.6rem;
+    background-color: #ffffff;
+    box-shadow: 2px 2px 5px 1px #6b5b5be5;
+}
+
+.info-box::after{
+    content: " ";
+    display: block;
+    clear: both;
+}
+
+.login-box{
+    text-align: justify;
+    box-sizing: border-box;
+    /* text-transform: capitalize; */
+    word-spacing:0.085rem;
+    /* border: 2px solid orangered; */
+    float: right;
+    height: 100%;
+    width: 49%;
+    padding: 0.6rem;
+    background-color: #ffffff;
+    box-shadow: 2px 2px 5px 1px #675656;
+    /* margin: 5rem; */
+}
+
+.login-box::after{
+    content: " ";
+    display: block;
+    clear: both;
+}
+
+
+
+.cp::after{
+    content: " ";
+    display: block;
+    clear: both;
+}
+
+.login-box h1{
+    font-weight: 600;
+    /* font-size: 2.8rem; */
+    border-bottom: 4px solid rgb(250, 100, 40);
+
+}
+
+.info-box h1{
+    font-weight: 500;
+    font-size: 2rem;
+    color: #0d0b0b;
+
+}
+
+.login-box form label{
+    display: block;
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+.login-box form label::after{
+   content: "* ";
+   color: rgb(156, 47, 20);
+   font-weight: 900;
+}
+
+.login-box form  textarea{
+    width: 100%;
+    height: 225px;
+    padding: 1rem;
+    
+}
+
+
+.login-box form input{
+    width: 100%;
+    /* font-size: 1.6rem; */
+    /* font-weight: 400; */
+}
+
+.login-box .submit{
+    background-color: rgb(250, 100, 40);
+    font-weight: 400;
+    color: #ffffff;
+    padding: 0.5rem 3rem;
+    width: fit-content;
+    text-align: center;
+    margin-left: 30%;
+    margin-right: 25%;
+    margin-top: 1rem;
+    border: none;
+    cursor: pointer;
+}
+
+
+
+/*  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  MEDIA QUERY  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
+@media (max-width: 500px){
+    html{
+        font-size: 8px;
+    }
+    .c1 .logo{
+        float: none;
+        text-align: center;
+        display: block;
+        width: 100%;
+    }
+    .c1 .nav-items {
+        float: none;
+        text-align: center;
+        display: block;
+        width: 100%;
+    }
+    .c2{
+        text-align: center;
+    }
+    .c2 .l1{
+        display: none;
+    }
+
+    .feature .f-box{
+        float: none;
+        width: 100%;
+        text-align: center;
+        margin: auto;
+        
+    }
+
+   
+    .feature  .lp,
+    .feature  .exp{
+        margin-top: 5rem;
+    }
+
+    
+    .info-box{
+        float: none;
+        width: 100%;
+        height: auto;
+        text-align: center;
+        margin-bottom: 5rem;
+        margin-top: 2rem;
+        
+    }
+
+    .login-box{
+        float: none;
+        width: 100%;
+        height: auto;
+        text-align: center;
+        
+    }
+
+
+
+    
+
+    
+
+}
+
+
+
+@media (max-width: 875px){
+    .s1 {
+        height: auto;
+        width: 100%;
+        
+    }
+    .s2 {
+        height: auto;
+        width: 100%;
+        
+    }
+    .s1 .s1i,
+.s2 .s2t{
+    float: none;
+    width: 100%;
+    text-align: center;
+}
+
+.s1 .s1t,
+.s2 .s2i{
+    float: none;
+    width: 100%;
+    text-align: center;
+}
+
+
+.s1 .s1i,
+.s2 .s2i{
+    height: auto;
+}
+
+    .a-foot h2{
+        float: none;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 1.5rem;
+
+    }
+    .a-foot .a-box{
+        float: none;
+        width: 100%;
+        text-align: center;
+        margin-left:28%;
+        margin-right: 28%;
+        
+
+    } 
+    
+
+}
+
+
+@media (max-width: 200px){
+
+    html{
+        font-size: 6.5px;
+    }
+
+}
+
+@media(max-width: 1100px){
+
+    .info-box{
+        float: none;
+        width: 100%;
+        height: auto;
+        text-align: center;
+        margin-bottom: 5rem;
+        margin-top: 2rem;
+        
+    }
+
+    .login-box{
+        float: none;
+        width: 100%;
+        height: auto;
+        text-align: center;
+        
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
